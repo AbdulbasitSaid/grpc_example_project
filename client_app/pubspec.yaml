@@ -9,6 +9,8 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  protos:
+    path: ../protos
 
 dev_dependencies:
   flutter_test:
