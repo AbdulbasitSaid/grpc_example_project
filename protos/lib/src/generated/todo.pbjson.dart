@@ -31,3 +31,36 @@ final $typed_data.Uint8List todoDescriptor = $convert.base64Decode(
     'Rpb24YAyABKAlSC2Rlc2NyaXB0aW9uEhIKBGRvbmUYBCABKAhSBGRvbmUSFgoGbGFiZWxzGAUg'
     'AygJUgZsYWJlbHM=');
 
+@$core.Deprecated('Use emptyDescriptor instead')
+const Empty$json = {
+  '1': 'Empty',
+};
+
+/// Descriptor for `Empty`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List emptyDescriptor = $convert.base64Decode(
+    'CgVFbXB0eQ==');
+
+@$core.Deprecated('Use todoListDescriptor instead')
+const TodoList$json = {
+  '1': 'TodoList',
+  '2': [
+    {'1': 'todos', '3': 1, '4': 3, '5': 11, '6': '.Todo', '10': 'todos'},
+  ],
+};
+
+/// Descriptor for `TodoList`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List todoListDescriptor = $convert.base64Decode(
+    'CghUb2RvTGlzdBIbCgV0b2RvcxgBIAMoCzIFLlRvZG9SBXRvZG9z');
+
+@$core.Deprecated('Use todoByIdRequestDescriptor instead')
+const TodoByIdRequest$json = {
+  '1': 'TodoByIdRequest',
+  '2': [
+    {'1': 'id', '3': 1, '4': 1, '5': 5, '10': 'id'},
+  ],
+};
+
+/// Descriptor for `TodoByIdRequest`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List todoByIdRequestDescriptor = $convert.base64Decode(
+    'Cg9Ub2RvQnlJZFJlcXVlc3QSDgoCaWQYASABKAVSAmlk');
+

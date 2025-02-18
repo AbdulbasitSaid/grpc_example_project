@@ -7,3 +7,18 @@ message Todo {
     bool done = 4;
     repeated string labels = 5;
 }
+message Empty {}
+message TodoList {
+    repeated Todo todos = 1;
+}
+message TodoByIdRequest {
+    int32 id = 1;
+}
+service TodoService {
+    rpc Create(Todo) returns (Todo);
+    rpc Read(TodoByIdRequest) returns (Todo) ;
+    rpc Update(Todo) returns (Todo);
+    rpc Delete(Todo) returns (Empty);
+    rpc List(Empty) returns (TodoList);
+    rpc ListTodosStream(Empty) returns (stream Todo); 
+}
